@@ -2,3 +2,27 @@
 family = "Mononoki Nerd Font"
 style = "Regular"
 
+[colors.primary]
+background = '#1c1c1c'
+foreground = '#eeece7'
+
+[colors.normal]
+black   = '#1c1c1c'
+red     = '#ec5f67'
+green   = '#80a763'
+yellow  = '#fdc253'
+blue    = '#4d83d0'
+magenta = '#bf83c0'
+cyan    = '#57c2c0'
+white   = '#eeece7'
+
+[colors.bright]
+black   = '#383838'
+red     = '#ff6973'
+green   = '#93d393'
+yellow  = '#ffd156'
+blue    = '#5485c0'
+magenta = '#ff55ff'
+cyan    = '#83e8e4'
+white   = '#ffffff' 
+
