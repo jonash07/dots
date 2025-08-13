@@ -1,23 +1,19 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "display": {
-    "separator": " : "
+    "separator": "  "
   },
   "modules": [
     {
       "type": "custom",
-      "key": "┌Info"
+      "key": "┌Info",
+      "keyColor": "blue"
     },
 
     {
       "type": "title",
       "format": "{user-name}",
       "key": "├ "
-    },
-    {
-      "type": "title",
-      "format": "{host-name}",
-      "key": "├󰍹 "
     },
     {
       "type": "os",
@@ -40,7 +36,8 @@
 
     {
       "type": "custom",
-      "key": "┌Display"
+      "key": "┌Display",
+      "keyColor": "blue"
     },
 
     {
@@ -64,7 +61,8 @@
 
     {
       "type": "custom",
-      "key": "┌Hardware"
+      "key": "┌Hardware",
+      "keyColor": "blue"
     },
 
     {
@@ -85,23 +83,19 @@
     },
     {
       "type": "disk",
-      "key": "├󰋊 "
+      "key": "├󰋊 ",
+      "folders": "/"
     },
     {
-      "type": "bios",
-      "key": "└ "
+      "type": "disk",
+      "key": "└󰋊 ",
+      "folders": "/hdd"
     },
 
     {
       "type": "custom",
       "key": " "
-    },
-
-    {
-      "type": "custom",
-      "format": " {#90}  {#31}  {#32}  {#33}  {#34}  {#35}  {#36}  {#37}  {#38}  {#39}       {#38}  {#37}  {#36}  {#35}  {#34}  {#33}  {#32}  {#31}  {#90}"
     }
-
   ]
 }
 

@@ -2,6 +2,9 @@
 family = "Mononoki Nerd Font"
 style = "Regular"
 
+[window]
+opacity = 0.7
+
 [colors.primary]
 background = '#1c1c1c'
 foreground = '#eeece7'
