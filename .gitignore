@@ -1,0 +1,11 @@
+# Ignore
+*
+
+# Allow
+!.gitignore
+!waybar/
+!waybar/*
+!alacritty/
+!alacritty/*
+!fastfetch/
+!fastfetch/*
