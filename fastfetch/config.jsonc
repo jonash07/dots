@@ -95,7 +95,9 @@
     {
       "type": "custom",
       "key": " "
-    }
+    },
+    
+    "colors"
   ]
 }
 
