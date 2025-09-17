@@ -6,90 +6,104 @@
   "modules": [
     {
       "type": "custom",
-      "key": "┌Info",
-      "keyColor": "blue"
+      "key": "Info",
+      "keyColor": "red"
     },
-
     {
       "type": "title",
       "format": "{user-name}",
-      "key": "├ "
+      "key": "  ",
+      "keyColor": "magenta"
     },
     {
       "type": "os",
-      "key": "├ "
+      "key": "  ",
+      "keyColor": "magenta"
     },
     {
       "type": "kernel",
-      "key": "├ "
+      "key": "  ",
+      "keyColor": "magenta"
     },
     {
       "type": "uptime",
-      "key": "├ "
+      "key": "  ",
+      "keyColor": "magenta"
     },
     {
       "type": "packages",
-      "key": "└󰏗 "
+      "key": " 󰏗 ",
+      "keyColor": "magenta"
     },
 
     "break",
 
     {
       "type": "custom",
-      "key": "┌Display",
-      "keyColor": "blue"
+      "key": "Display",
+      "keyColor": "red"
     },
 
     {
       "type": "wm",
-      "key": "├ "
+      "key": "  ",
+      "keyColor": "magenta"
     },
     {
       "type": "shell",
-      "key": "├ "
+      "key": "  ",
+      "keyColor": "magenta"
     },
     {
       "type": "terminal",
-      "key": "├ "
+      "key": "  ",
+      "keyColor": "magenta"
     },
     {
       "type": "terminalfont",
-      "key": "└ "
+      "key": "  ",
+      "keyColor": "magenta"
     },
 
     "break",
 
     {
       "type": "custom",
-      "key": "┌Hardware",
-      "keyColor": "blue"
+      "key": "Hardware",
+      "keyColor": "red"
     },
 
     {
       "type": "cpu",
-      "key": "├󰻠 "
+      "key": " 󰻠 ",
+      "keyColor": "magenta"
     },
     {
       "type": "gpu",
-      "key": "├󰾲 "
+      "key": " 󰾲 ",
+      "keyColor": "magenta"
     },
     {
       "type": "memory",
-      "key": "├ "
+      "key": "  ",
+      "keyColor": "magenta"
     },
     {
       "type": "swap",
-      "key": "├󰓡 "
+      "key": " 󰓡 ",
+      "keyColor": "magenta"
     },
     {
       "type": "disk",
-      "key": "├󰋊 ",
-      "folders": "/"
+      "key": " 󰋊 ",
+      "folders": "/",
+      "keyColor": "magenta"
     },
     {
       "type": "disk",
-      "key": "└󰋊 ",
-      "folders": "/hdd"
+      "key": " 󰋊 ",
+      "folders": "/hdd",
+      "keyColor": "magenta"
     },
 
     {
