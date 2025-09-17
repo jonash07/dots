@@ -25,6 +25,8 @@ window#waybar > box {
 #bluetooth,
 #network,
 #clock,
+#battery,
+#battery-bat2,
 #cpu,
 #memory,
 #custom-power

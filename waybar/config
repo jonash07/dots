@@ -5,7 +5,7 @@
 
   "modules-left": ["custom/logo", "hyprland/workspaces"],
   "modules-center": ["custom/playerctl"],
-  "modules-right": ["tray", "pulseaudio", "bluetooth", "network", "clock", "cpu", "memory", "custom/power"],
+  "modules-right": ["tray", "pulseaudio", "bluetooth", "network", "clock", "battery", "battery#bat2", "cpu", "memory", "custom/power"],
 
   "custom/logo": {
     "format": " ",
@@ -70,6 +70,16 @@
         "today": "<span color='#ff6699'><b><u>{}</u></b></span>",
       },
     },
+  },
+
+  "battery": {
+    "bat": "BAT0",
+    "format": "INT 󰁹 {capacity}%",
+  },
+
+  "battery#bat2": {
+    "bat": "BAT1",
+    "format": "EXT 󰁹 {capacity}%",
   },
 
   "cpu": {

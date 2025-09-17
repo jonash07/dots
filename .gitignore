@@ -3,6 +3,7 @@
 
 # Allow
 !.gitignore
+!starship.toml
 !waybar/
 !waybar/*
 !alacritty/
