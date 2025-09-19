@@ -66,7 +66,7 @@ truncation_symbol = "…/"
 [git_branch]
 symbol = ""
 style = "bg:base06"
-format = '[[ $symbol $branch ](fg:base00 bg:base06)]($style)'
+format = '[[$symbol $branch ](fg:base00 bg:base06)]($style)'
 
 
 [character]
