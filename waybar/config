@@ -6,7 +6,7 @@
   "modules-left": ["custom/logo", "hyprland/workspaces"],
   "modules-center": ["custom/playerctl"],
   "modules-right": ["tray", "pulseaudio", "bluetooth", "network", "clock", "battery", "battery#bat2", "cpu", "memory", "custom/power"],
-
+//notifs
   "custom/logo": {
     "format": " ",
   },
@@ -55,11 +55,10 @@
 
   "clock": {
     "interval": 1,
-    "format": "{:%H:%M:%S}  ",
+    "format": "{:%H:%M}  ",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
-      "mode": "year",
-      "mode-mon-col": 3,
+      "mode": "month",
       "weeks-pos": "right",
       "on-scroll": 1,
       "format": {
@@ -69,6 +68,10 @@
         "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
         "today": "<span color='#ff6699'><b><u>{}</u></b></span>",
       },
+    },
+    "actions": {
+      "on-double-click-right": "shift_up",
+      "on-double-click": "shift_down",
     },
   },
 
