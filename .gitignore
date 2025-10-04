@@ -3,6 +3,7 @@
 
 # Allow
 !.gitignore
+!macchiato_mod.txt
 !starship.toml
 !waybar/
 !waybar/*
