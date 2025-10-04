@@ -38,7 +38,12 @@
 
 // slider on hover? or group
   "pulseaudio": {
-    "format": "󰝚 {volume}%",
+    "format": "{icon}{volume}%",
+    "format-icons": {
+//      "headphone": " ",
+//      "headset": " ",
+      "default": "󰝚 ",
+    },
     "on-click": "pavucontrol",
   },
 
