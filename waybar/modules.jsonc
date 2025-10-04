@@ -1,14 +1,4 @@
 {
-  "layer": "top",
-  "position": "top",
-  "spacing": 0,
-
-  "modules-left": ["custom/logo", "bluetooth", "pulseaudio", "custom/playerctl"],
-  "modules-center": ["hyprland/workspaces"],
-  "modules-right": ["tray", "network", "clock", "group/hardinfo", "custom/power"],
-
-// notifs
-
   "custom/logo": {
     "format": " ",
   },
@@ -32,21 +22,11 @@
     },
   },
 
-  "group/media": {
-    "modules": [
-      "custom/playerinfo",
-      "custom/playerctl",
-    ],
-  },
-
-  "custom/playerinfo": {
+  "custom/playerctl": {
     "format": "{}",
     "return-type": "json",
     "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
     "max-length": 48,
-  },
-
-  "custom/playerctl": {
     "on-click": "playerctl play-pause",
     "on-click-middle": "playerctl previous",
     "on-click-right": "playerctl next",
@@ -70,7 +50,8 @@
 
   "clock": {
     "interval": 1,
-    "format": "{:%H:%M %n%d.%m.%Y}",
+    "format": "{:%H:%M}  ",
+//    "format": "{:%H:%M %n%d.%m.%Y}",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
       "mode": "month",
@@ -88,16 +69,6 @@
       "on-double-click-right": "shift_up",
       "on-double-click": "shift_down",
     },
-  },
-
-  "group/hardinfo": {
-    "orientation": "inherit",
-    "modules": [
-      "battery",
-      "battery#bat2",
-      "cpu",
-      "memory",
-    ],
   },
 
   "battery": {

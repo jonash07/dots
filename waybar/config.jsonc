@@ -1,0 +1,34 @@
+{
+  "include": ["./modules.jsonc"],
+
+  "layer": "top",
+  "position": "top",
+  "spacing": 0,
+
+  "modules-left": ["custom/logo", "group/media"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": ["tray", "network", "clock", "group/hardinfo", "custom/power"],
+
+// add notifs
+
+  "group/media": {
+    "orientation": "inherit",
+    "modules": [
+      "bluetooth",
+      "pulseaudio",
+      "custom/playerctl",
+    ],
+  },
+
+  "group/hardinfo": {
+    "orientation": "inherit",
+    "modules": [
+      "battery",
+      "battery#bat2",
+      "cpu",
+      "memory",
+    ],
+  },
+
+}
+

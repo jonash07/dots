@@ -1,14 +1,16 @@
 * {
     border: none;
     font-family: Mononoki Nerd Font;
-    font-size: 18px;
+    font-size: 20px;
 
 }
+
 
 window#waybar {
     background-color: transparent;
 
 }
+
 
 window#waybar > box {
     background-color: transparent;
@@ -17,16 +19,15 @@ window#waybar > box {
 
 }
 
+/* standalone modules + groups */
 #custom-logo,
 #workspaces,
-#group-media,
 #tray,
-#pulseaudio,
-#bluetooth,
 #network,
 #clock,
-#group-hardinfo,
-#custom-power
+#custom-power,
+#hardinfo,
+#media
 {
     background-color: rgba(169, 169, 169, 0.5);
     margin: 8px 4px 0px 4px;
@@ -36,14 +37,30 @@ window#waybar > box {
 
 }
 
-#clock {
-  font-size: 14px;
+#media,
+#hardinfo,
+#workspaces
+{
+  padding: 0 0 0 0;
+
 }
 
-#workspaces {
-    padding: 0 0 0 0;
-
+/* inside group modules */
+#bluetooth,
+#pulseaudio,
+#custom-playerctl,
+#battery,
+#battery-bat2,
+#cpu,
+#memory
+{
+    background-color: rgba(169, 169, 169, 0.5);
+    margin: 3px 3px 3px 3px;
+    padding: 0px 4px 0px 4px;
+    border-radius: 4px;
+    color: white;
 }
+
 
 #workspaces button {
     background-color: rgba(169, 169, 169, 0.5);
@@ -54,15 +71,24 @@ window#waybar > box {
 
 }
 
+
 #tray {
   min-width: 24px;
 
 }
 
+
+#network {
+  padding: 0 6px 0 6px;
+
+}
+
+
 #custom-logo {
     padding: 2px 4px 2px 7px;
 
 }
+
 
 #custom-power {
     padding: 2px 2px 2px 9px;
