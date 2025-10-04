@@ -1,7 +1,7 @@
 * {
     border: none;
     font-family: Mononoki Nerd Font;
-    font-size: 20px;
+    font-size: 18px;
 
 }
 
@@ -19,16 +19,13 @@ window#waybar > box {
 
 #custom-logo,
 #workspaces,
-#custom-playerctl,
+#group-media,
 #tray,
 #pulseaudio,
 #bluetooth,
 #network,
 #clock,
-#battery,
-#battery-bat2,
-#cpu,
-#memory,
+#group-hardinfo,
 #custom-power
 {
     background-color: rgba(169, 169, 169, 0.5);
@@ -37,6 +34,10 @@ window#waybar > box {
     border-radius: 4px;
     color: white;
 
+}
+
+#clock {
+  font-size: 14px;
 }
 
 #workspaces {
@@ -60,11 +61,6 @@ window#waybar > box {
 
 #custom-logo {
     padding: 2px 4px 2px 7px;
-
-}
-
-#mpris {
-  min-width: 80px;
 
 }
 

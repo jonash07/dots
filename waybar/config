@@ -3,10 +3,12 @@
   "position": "top",
   "spacing": 0,
 
-  "modules-left": ["custom/logo", "hyprland/workspaces"],
-  "modules-center": ["custom/playerctl"],
-  "modules-right": ["tray", "pulseaudio", "bluetooth", "network", "clock", "battery", "battery#bat2", "cpu", "memory", "custom/power"],
-//notifs
+  "modules-left": ["custom/logo", "bluetooth", "pulseaudio", "custom/playerctl"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": ["tray", "network", "clock", "group/hardinfo", "custom/power"],
+
+// notifs
+
   "custom/logo": {
     "format": " ",
   },
@@ -30,32 +32,45 @@
     },
   },
 
-  "custom/playerctl": {
-    "format": "{icon} {}",
+  "group/media": {
+    "modules": [
+      "custom/playerinfo",
+      "custom/playerctl",
+    ],
+  },
+
+  "custom/playerinfo": {
+    "format": "{}",
     "return-type": "json",
     "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+    "max-length": 48,
+  },
+
+  "custom/playerctl": {
     "on-click": "playerctl play-pause",
     "on-click-middle": "playerctl previous",
     "on-click-right": "playerctl next",
-    "max-length": 64,
     "format-icons": {
       "Playing": "󰏥 ",
       "Paused": "󰐌 ",
     },
   },
 
+// slider on hover? or group
   "pulseaudio": {
     "format": "󰝚 {volume}%",
-    "on-clicl": "pavucontrol",
+    "on-click": "pavucontrol",
   },
 
   "network": {
-    "format": " ",
+    "format": "{icon}",
+    "format-ethernet": "󰈁",
+    "format-wifi": " ",
   },
 
   "clock": {
     "interval": 1,
-    "format": "{:%H:%M}  ",
+    "format": "{:%H:%M %n%d.%m.%Y}",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
       "mode": "month",
@@ -75,14 +90,26 @@
     },
   },
 
+  "group/hardinfo": {
+    "orientation": "inherit",
+    "modules": [
+      "battery",
+      "battery#bat2",
+      "cpu",
+      "memory",
+    ],
+  },
+
   "battery": {
     "bat": "BAT0",
-    "format": "INT 󰁹 {capacity}%",
+    "format": "I {icon} {capacity}%",
+    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
   },
 
   "battery#bat2": {
     "bat": "BAT1",
-    "format": "EXT 󰁹 {capacity}%",
+    "format": "E {icon} {capacity}%",
+    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
   },
 
   "cpu": {
