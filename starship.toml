@@ -5,6 +5,7 @@ format = """
 $username\
 [@](fg:base00 bg:base03)\
 $hostname\
+$nix_shell\
 [ ](fg:base03 bg:base04)\
 $directory\
 [ ](fg:base04 bg:base06)\
@@ -49,18 +50,20 @@ style = "fg:base00 bg:base03"
 format = '[$hostname ]($style)'
 
 
+[nix_shell]
+disabled = false
+style = "fg:base00 bg:base03"
+impure_msg = '[impure](fg:bold red bg:base03)'
+pure_msg = '[pure](fg:bold green bg:base03)'
+unknown_msg = '[unknown](fg:bold yellow bg:base03)'
+format = '[via $state( \($name\)) ]($style)'
+
+
 [directory]
 style = "fg:base00 bg:base04"
 format = "[$path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
-
-
-[directory.substitutions]
-"Documents" = "󰈙 "
-"Downloads" = " "
-"Music" = " "
-"Pictures" = " "
 
 
 [git_branch]
