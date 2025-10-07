@@ -75,6 +75,12 @@ window#waybar > box {
 }
 
 
+#workspaces button:hover {
+  background: @submodule-active;
+
+}
+
+
 #tray {
   min-width: 24px;
 
