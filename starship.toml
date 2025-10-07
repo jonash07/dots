@@ -55,10 +55,10 @@ format = '[$hostname ]($style)'
 [nix_shell]
 disabled = false
 style = "fg:pbg0 bg:pbg3"
-impure_msg = '[impure](fg:bold c08 bg:pbg3)'
-pure_msg = '[pure](fg:bold c0B bg:pbg3)'
-unknown_msg = '[unknown](fg:bold c0A bg:pbg3)'
-format = '[via $state( \($name\)) ]($style)'
+impure_msg = '[impure](fg:bold color_red bg:pbg3)'
+pure_msg = '[pure](fg:bold color_green bg:pbg3)'
+unknown_msg = '[unknown](fg:bold color_yellow bg:pbg3)'
+format = '[ $state( \($name\)) ]($style)'
 
 
 [directory]
