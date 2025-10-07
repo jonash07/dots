@@ -1,17 +1,17 @@
 format = """
-[ ░▒▓](base02)\
-[   ](fg:base00 bg:base02)\
-[ ](fg:base02 bg:base03)\
+[ ░▒▓](pbg2)\
+[   ](fg:text0 bg:pbg2)\
+[ ](fg:pbg2 bg:pbg3)\
 $username\
-[@](fg:base00 bg:base03)\
+[   ](fg:pbg0 bg:pbg3)\
 $hostname\
 $nix_shell\
-[ ](fg:base03 bg:base04)\
+[ ](fg:pbg3 bg:pbg4)\
 $directory\
-[ ](fg:base04 bg:base06)\
+[ ](fg:pbg4 bg:pbg6)\
 $git_branch\
-[󰄛 ](fg:base00 bg:base06)\
-[ ](fg:base06 bg:transparent)\
+[󰄛 ](fg:pbg0 bg:pbg6)\
+[ ](fg:pbg6 bg:transparent)\
 $character
 """
 
@@ -20,47 +20,49 @@ palette = 'moonlight'
 
 
 [palettes.moonlight]
-base00 = "#212337"
-base01 = "#403c64"
-base02 = "#596399"
-base03 = "#748cd6"
-base04 = "#a1abe0"
-base05 = "#a3ace1"
-base06 = "#b4a4f4"
-base07 = "#ef43fa"
-base08 = "#ff5370"
-base09 = "#f67f81"
-base0A = "#ffc777"
-base0B = "#2df4c0"
-base0C = "#04d1f9"
-base0D = "#40ffff"
-base0E = "#b994f1"
-base0F = "#ecb2f0"
+text0 = "#cad3f5"
+text1 = "#b7bdf8"
+pbg0 = "#212337"
+pbg1 = "#403c64"
+pbg2 = "#596399"
+pbg3 = "#748cd6"
+pbg4 = "#a1abe0"
+pbg5 = "#a3ace1"
+pbg6 = "#b4a4f4"
+color_pink = "#ef43fa"
+color_red = "#ff5370"
+color_orange = "#f67f81"
+color_yellow = "#ffc777"
+color_teal = "#2df4c0"
+color_blue = "#04d1f9"
+color_cyan = "#40ffff"
+color0E = "#b994f1"
+color0F = "#ecb2f0"
 
 
 [username]
 show_always = true
-style_user = "fg:base00 bg:base03"
+style_user = "fg:pbg0 bg:pbg3"
 format = '[$user]($style)'
 
 
 [hostname]
 ssh_only = false
-style = "fg:base00 bg:base03"
+style = "fg:pbg0 bg:pbg3"
 format = '[$hostname ]($style)'
 
 
 [nix_shell]
 disabled = false
-style = "fg:base00 bg:base03"
-impure_msg = '[impure](fg:bold red bg:base03)'
-pure_msg = '[pure](fg:bold green bg:base03)'
-unknown_msg = '[unknown](fg:bold yellow bg:base03)'
+style = "fg:pbg0 bg:pbg3"
+impure_msg = '[impure](fg:bold c08 bg:pbg3)'
+pure_msg = '[pure](fg:bold c0B bg:pbg3)'
+unknown_msg = '[unknown](fg:bold c0A bg:pbg3)'
 format = '[via $state( \($name\)) ]($style)'
 
 
 [directory]
-style = "fg:base00 bg:base04"
+style = "fg:pbg0 bg:pbg4"
 format = "[$path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -68,8 +70,8 @@ truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
-style = "bg:base06"
-format = '[[$symbol $branch ](fg:base00 bg:base06)]($style)'
+style = "bg:pbg6"
+format = '[[$symbol $branch ](fg:pbg0 bg:pbg6)]($style)'
 
 
 [character]

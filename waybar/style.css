@@ -22,13 +22,14 @@ window#waybar > box {
 
 }
 
+
 /* standalone modules + groups */
 #custom-logo,
 #workspaces,
 #tray,
 #network,
 #clock,
-#custom-power,
+#powergroup,
 #hardinfo,
 #media
 {
@@ -40,6 +41,7 @@ window#waybar > box {
 
 }
 
+
 #media,
 #hardinfo,
 #workspaces
@@ -48,7 +50,12 @@ window#waybar > box {
 
 }
 
+
 /* inside group modules */
+#custom-powerbutton,
+#custom-poweroff,
+#custom-reboot,
+#custom-logout,
 #bluetooth,
 #pulseaudio,
 #custom-playerctl,
@@ -65,6 +72,17 @@ window#waybar > box {
 }
 
 
+#custom-powerbutton,
+#custom-poweroff,
+#custom-reboot,
+#custom-logout
+{
+  padding: 0 8px 0 4px;
+  margin: 3px 2px 3px 2px;
+
+}
+
+
 #workspaces button {
     background-color: @submodule;
     margin: 3px 3px 3px 3px;
@@ -77,6 +95,7 @@ window#waybar > box {
 
 #workspaces button:hover {
   background: @submodule-active;
+  box-shadow: unset;
 
 }
 

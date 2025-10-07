@@ -7,7 +7,7 @@
 
   "modules-left": ["custom/logo", "group/media"],
   "modules-center": ["hyprland/workspaces"],
-  "modules-right": ["tray", "network", "clock", "group/hardinfo", "custom/power"],
+  "modules-right": ["tray", "network", "clock", "group/hardinfo", "group/powergroup"],
 
 // add notifs
 
@@ -16,8 +16,8 @@
     "modules": [
       "bluetooth",
       "pulseaudio",
-      "custom/playerctl",
-    ],
+      "custom/playerctl"
+    ]
   },
 
   "group/hardinfo": {
@@ -26,9 +26,25 @@
       "battery",
       "battery#bat2",
       "cpu",
-      "memory",
-    ],
+      "memory"
+    ]
   },
+
+  "group/powergroup": {
+    "orientation": "inherit",
+    "drawer": {
+      "transiton-duration": 512,
+      "children-class": "",
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "custom/powerbutton",
+      "custom/poweroff",
+      "custom/reboot",
+      "custom/logout"
+    ]
+
+  }
 
 }
 
