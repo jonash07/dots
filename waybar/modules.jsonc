@@ -77,6 +77,12 @@
     }
   },
 
+  "tray": {
+    "show-passive-items": true,
+    "spacing": 8,
+    "icon-size": 20
+  },
+
   "battery": {
     "bat": "BAT0",
     "format": "I {icon} {capacity}%",
