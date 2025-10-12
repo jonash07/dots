@@ -114,20 +114,20 @@
   "custom/poweroff": {
     "format": "󰤁",
     "tooltip": false,
-    "on-click": "shutdown now"
+    "on-double-click": "shutdown now"
   },
 
   "custom/reboot": {
     "format": "",
     "tooltip": false,
-    "on-click": "reboot"
+    "on-double-click": "reboot"
 
   },
 
   "custom/logout": {
     "format": "󰗼",
     "tooltip": false,
-    "on-click": "hyprctl dispatch exit"
+    "on-double-click": "hyprctl dispatch exit"
    
   }
 

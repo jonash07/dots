@@ -11,3 +11,6 @@
 !alacritty/*
 !fastfetch/
 !fastfetch/*
+!nvim/
+!nvim/*
+
