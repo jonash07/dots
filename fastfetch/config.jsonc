@@ -93,13 +93,6 @@
     {
       "type": "disk",
       "key": " 󰋊 ",
-      "folders": "/",
-      "keyColor": "magenta"
-    },
-    {
-      "type": "disk",
-      "key": " 󰋊 ",
-      "folders": "/hdd",
       "keyColor": "magenta"
     },
 

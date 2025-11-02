@@ -51,7 +51,9 @@
   "network": {
     "format": "{icon}",
     "format-ethernet": "󰈁",
-    "format-wifi": " "
+    "format-wifi": " ",
+    "format-disabled": "󰖪 ",
+    "format-disconnected": "󱛅 "
   },
 
   "clock": {
