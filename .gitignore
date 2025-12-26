@@ -1,0 +1,25 @@
+# Ignore
+*
+
+# note to self cause im retarded:
+# * = all files in a directory
+# ** = all nested things in a directory
+
+# Allow
+!.gitignore
+!macchiato_mod.txt
+!starship.toml
+!waybar/
+!waybar/*
+!alacritty/
+!alacritty/*
+!fastfetch/
+!fastfetch/*
+!rofi/
+!rofi/*
+!nvim/
+!nvim/**
+!hypr/
+!hypr/hyprlock.conf
+!hypr/hypridle.conf
+

@@ -1,0 +1,93 @@
+/**
+ * rofi -dump-theme output.
+ * Rofi version: 2.0.0
+ **/
+* {
+    red:              IndianRed;
+    lightgreen:       rgba ( 136, 204, 34, 100 % );
+    green:            rgba ( 134, 175, 128, 100 % );
+    background-color: transparent;
+    lightred:         rgba ( 204, 85, 51, 100 % );
+    blue:             CornflowerBlue;
+    lightmagenta:     rgba ( 153, 102, 0, 100 % );
+    dark:             rgba ( 28, 28, 28, 100 % );
+    lightblack:       rgba ( 85, 68, 68, 100 % );
+    lightblue:        SkyBlue;
+    black:            rgba ( 61, 53, 42, 100 % );
+    lightwhite:       rgba ( 221, 204, 187, 100 % );
+    cyan:             LightSteelBlue;
+    magenta:          BurlyWood;
+    lightyellow:      rgba ( 255, 167, 93, 100 % );
+    text-color:       rgba ( 255, 238, 221, 100 % );
+    white:            rgba ( 187, 170, 153, 100 % );
+    yellow:           rgba ( 232, 174, 91, 100 % );
+    lightcyan:        LightSteelBlue;
+    highlight:        bold White;
+}
+window {
+    width:      30.0000em ;
+    height:     100.0000% ;
+    location:   west;
+    anchor:     west;
+    border:     0px 2px 0px 0px ;
+    text-color: var(lightwhite);
+}
+mode-switcher {
+    padding:          4px ;
+    background-color: var(lightblack);
+    border:           2px 0px 0px ;
+}
+button selected {
+    border-color: var(lightgreen);
+    text-color:   var(lightgreen);
+}
+inputbar {
+    padding:          4px ;
+    background-color: var(lightblack);
+    text-color:       var(lightgreen);
+    border:           0px 0px 2px ;
+}
+mainbox {
+    background-color: rgba ( 28, 28, 28, 93 % );
+    expand:           true;
+    spacing:          1.0000em ;
+}
+listview {
+    padding: 0.0000em 0.4000em 0.0000em 1.0000em ;
+    dynamic: false;
+    lines:   0;
+}
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+}
+element selected.normal {
+    background-color: var(blue);
+}
+element selected.active {
+    background-color: var(lightblue);
+    text-color:       var(dark);
+}
+element selected.urgent {
+    background-color: var(lightred);
+    text-color:       var(dark);
+}
+element normal.active {
+    text-color: var(lightblue);
+}
+element normal.urgent {
+    text-color: var(lightred);
+}
+element alternate.active {
+    text-color: var(lightblue);
+}
+element alternate.urgent {
+    text-color: var(lightred);
+}
+error-message {
+    padding:          1.0000em ;
+    background-color: Red;
+    expand:           true;
+    border-color:     DarkRed;
+    border:           2px ;
+}

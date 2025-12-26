@@ -1,0 +1,125 @@
+@import "colors.css";
+
+* {
+    border: none;
+    font-family: Mononoki Nerd Font;
+    font-size: 20px;
+    
+
+}
+
+
+window#waybar {
+    background-color: transparent;
+
+}
+
+
+window#waybar > box {
+    background-color: transparent;
+    margin-right: 6px;
+    margin-left: 6px;
+
+}
+
+
+/* standalone modules + groups */
+#custom-logo,
+#workspaces,
+#tray,
+#clock,
+#powergroup,
+#hardinfo,
+#media
+{
+    background-color: @module;
+    margin: 8px 4px 0px 4px;
+    padding: 0px 4px 0px 4px;
+    border-radius: 4px;
+    color: @text-color;
+
+}
+
+
+#media,
+#hardinfo,
+#workspaces
+{
+  padding: 0 0 0 0;
+
+}
+
+
+/* inside group modules */
+#custom-powerbutton,
+#custom-poweroff,
+#custom-reboot,
+#custom-logout,
+#bluetooth,
+#pulseaudio,
+#network,
+#custom-playerctl,
+#battery,
+#battery-bat2,
+#cpu,
+#memory
+{
+    background-color: @submodule;
+    margin: 3px 3px 3px 3px;
+    padding: 0px 4px 0px 4px;
+    border-radius: 4px;
+    color: @text-color;
+}
+
+
+#custom-powerbutton,
+#custom-poweroff,
+#custom-reboot,
+#custom-logout
+{
+  padding: 0 8px 0 4px;
+  margin: 3px 2px 3px 2px;
+
+}
+
+
+#workspaces button {
+    background-color: @submodule;
+    margin: 3px 3px 3px 3px;
+    padding: 0 4px 0 4px;
+    border-radius: 4px;
+    color: @text-color;
+
+}
+
+
+#workspaces button:hover {
+  background: @submodule-active;
+  box-shadow: unset;
+
+}
+
+
+#tray {
+  min-width: 24px;
+
+}
+
+
+#network {
+  padding: 0 6px 0 6px;
+
+}
+
+
+#custom-logo {
+    padding: 2px 4px 2px 7px;
+
+}
+
+
+#custom-power {
+    padding: 2px 2px 2px 9px;
+
+}
+

@@ -1,0 +1,79 @@
+format = """
+[ ░▒▓](pbg2)\
+[   ](fg:text0 bg:pbg2)\
+[ ](fg:pbg2 bg:pbg3)\
+$username\
+[   ](fg:pbg0 bg:pbg3)\
+$hostname\
+$nix_shell\
+[ ](fg:pbg3 bg:pbg4)\
+$directory\
+[ ](fg:pbg4 bg:pbg6)\
+$git_branch\
+[󰄛 ](fg:pbg0 bg:pbg6)\
+[ ](fg:pbg6 bg:transparent)\
+$character
+"""
+
+
+palette = 'moonlight'
+
+
+[palettes.moonlight]
+text0 = "#cad3f5"
+text1 = "#b7bdf8"
+pbg0 = "#212337"
+pbg1 = "#403c64"
+pbg2 = "#596399"
+pbg3 = "#748cd6"
+pbg4 = "#a1abe0"
+pbg5 = "#a3ace1"
+pbg6 = "#b4a4f4"
+color_pink = "#ef43fa"
+color_red = "#ff5370"
+color_orange = "#f67f81"
+color_yellow = "#ffc777"
+color_teal = "#2df4c0"
+color_blue = "#04d1f9"
+color_cyan = "#40ffff"
+color0E = "#b994f1"
+color0F = "#ecb2f0"
+
+
+[username]
+show_always = true
+style_user = "fg:pbg0 bg:pbg3"
+format = '[$user]($style)'
+
+
+[hostname]
+ssh_only = false
+style = "fg:pbg0 bg:pbg3"
+format = '[$hostname ]($style)'
+
+
+[nix_shell]
+disabled = false
+style = "fg:pbg0 bg:pbg3"
+impure_msg = '[impure](fg:bold color_red bg:pbg3)'
+pure_msg = '[pure](fg:bold color_green bg:pbg3)'
+unknown_msg = '[unknown](fg:bold color_yellow bg:pbg3)'
+format = '[ $state( \($name\)) ]($style)'
+
+
+[directory]
+style = "fg:pbg0 bg:pbg4"
+format = "[$path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+
+[git_branch]
+symbol = ""
+style = "bg:pbg6"
+format = '[[$symbol $branch ](fg:pbg0 bg:pbg6)]($style)'
+
+
+[character]
+format = '$symbol '
+
