@@ -12,6 +12,7 @@ $directory\
 $git_branch\
 [󰄛 ](fg:pbg0 bg:pbg6)\
 [ ](fg:pbg6 bg:transparent)\
+$python\
 $character
 """
 
@@ -72,6 +73,10 @@ truncation_symbol = "…/"
 symbol = ""
 style = "bg:pbg6"
 format = '[[$symbol $branch ](fg:pbg0 bg:pbg6)]($style)'
+
+
+[python]
+symbol = ''
 
 
 [character]
