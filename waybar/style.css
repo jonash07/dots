@@ -27,8 +27,8 @@ window#waybar > box {
 #custom-logo,
 #workspaces,
 #tray,
+#network,
 #clock,
-#powergroup,
 #hardinfo,
 #media
 {
@@ -51,13 +51,8 @@ window#waybar > box {
 
 
 /* inside group modules */
-#custom-powerbutton,
-#custom-poweroff,
-#custom-reboot,
-#custom-logout,
 #bluetooth,
 #pulseaudio,
-#network,
 #custom-playerctl,
 #battery,
 #battery-bat2,

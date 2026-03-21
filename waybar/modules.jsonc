@@ -37,6 +37,13 @@
     }
   },
 
+  "bluetooth": {
+    "format-on": "󰂯",
+    "format-off": "󰂲",
+    "format-connected": "󰂰 {device_alias}",
+    "on-click": "overskride"
+  },
+
 // slider on hover? or group
   "pulseaudio": {
     "format": "{icon}{volume}%",
@@ -104,34 +111,9 @@
   },
 
   "memory": {
-    "format": "  {used:0.1f}G/{total:0.1f}G",
-    "tooltip-format": "󰓡 {swapUsed:0.1f}G/{swapTotal:0.1f}G",
+    "format": "  {used:0.1f}G",
+    "tooltip-format": "󰓡 {swapUsed:0.1f}G",
     "interval": 1
-  },
-
-  "custom/powerbutton": {
-    "format": "⏻",
-    "tooltip": false
-  },
-
-  "custom/poweroff": {
-    "format": "󰤁",
-    "tooltip": false,
-    "on-double-click": "shutdown now"
-  },
-
-  "custom/reboot": {
-    "format": "",
-    "tooltip": false,
-    "on-double-click": "reboot"
-
-  },
-
-  "custom/logout": {
-    "format": "󰗼",
-    "tooltip": false,
-    "on-double-click": "hyprctl dispatch exit"
-   
   }
 
 }

@@ -5,9 +5,9 @@
   "position": "top",
   "spacing": 0,
 
-  "modules-left": ["custom/logo", "group/media"],
-  "modules-center": ["hyprland/workspaces"],
-  "modules-right": ["tray", "clock", "group/hardinfo", "group/powergroup"],
+  "modules-left": ["custom/logo", "group/media", "hyprland/workspaces"],
+  "modules-center": [],
+  "modules-right": ["tray", "network", "group/hardinfo", "clock"],
 
 // add notifs
 
@@ -15,8 +15,7 @@
     "orientation": "inherit",
     "modules": [
       "bluetooth",
-      "pulseaudio",
-      "network"
+      "pulseaudio"
     ]
   },
 
@@ -28,22 +27,6 @@
       "cpu",
       "memory"
     ]
-  },
-
-  "group/powergroup": {
-    "orientation": "inherit",
-    "drawer": {
-      "transiton-duration": 512,
-      "children-class": "",
-      "transition-left-to-right": false
-    },
-    "modules": [
-      "custom/powerbutton",
-      "custom/poweroff",
-      "custom/reboot",
-      "custom/logout"
-    ]
-
   }
 
 }
