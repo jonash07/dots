@@ -1,6 +1,13 @@
-@define-color module #1e2030;
-@define-color submodule #24273a;
-@define-color submodule-active #363a4f;
+@define-color bg0 #1e2030;
+@define-color bg1 #24273a;
+@define-color bg1_act #363a4f;
 @define-color text-color #cad3f5;
 @define-color text-active #b7bdf8;
+
+@define-color fg #d5d6db;
+@define-color fg_hl #cad3f5;
+@define-color fg_act #b7bdf8;
+@define-color bg #1e2030;
+@define-color bg_hl #212337;
+@define-color bg_act #363a4f;
 

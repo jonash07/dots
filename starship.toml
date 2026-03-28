@@ -8,10 +8,10 @@ $hostname\
 $nix_shell\
 [ ](fg:pbg3 bg:pbg4)\
 $directory\
-[ ](fg:pbg4 bg:pbg6)\
+[ ](fg:pbg4 bg:pbg5)\
 $git_branch\
-[󰄛 ](fg:pbg0 bg:pbg6)\
-[ ](fg:pbg6 bg:transparent)\
+[󰄛 ](fg:pbg0 bg:pbg5)\
+[ ](fg:pbg5 bg:transparent)\
 $python\
 $character
 """
@@ -28,8 +28,7 @@ pbg1 = "#403c64"
 pbg2 = "#596399"
 pbg3 = "#748cd6"
 pbg4 = "#a1abe0"
-pbg5 = "#a3ace1"
-pbg6 = "#b4a4f4"
+pbg5 = "#b4a4f4"
 color_pink = "#ef43fa"
 color_red = "#ff5370"
 color_orange = "#f67f81"
@@ -71,8 +70,8 @@ truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
-style = "bg:pbg6"
-format = '[[$symbol $branch ](fg:pbg0 bg:pbg6)]($style)'
+style = "bg:pbg5"
+format = '[[$symbol $branch ](fg:pbg0 bg:pbg5)]($style)'
 
 
 [python]

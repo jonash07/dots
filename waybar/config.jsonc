@@ -5,27 +5,17 @@
   "position": "top",
   "spacing": 0,
 
-  "modules-left": ["custom/logo", "group/media", "hyprland/workspaces"],
+  "modules-left": ["custom/logo", "bluetooth", "pulseaudio", "hyprland/workspaces"],
   "modules-center": [],
-  "modules-right": ["tray", "network", "group/hardinfo", "clock"],
+  "modules-right": ["tray", "network", "group/batinfo", "cpu", "memory", "clock"],
 
 // add notifs
 
-  "group/media": {
-    "orientation": "inherit",
-    "modules": [
-      "bluetooth",
-      "pulseaudio"
-    ]
-  },
-
-  "group/hardinfo": {
+  "group/batinfo": {
     "orientation": "inherit",
     "modules": [
       "battery",
-      "battery#bat2",
-      "cpu",
-      "memory"
+      "battery#bat2"
     ]
   }
 

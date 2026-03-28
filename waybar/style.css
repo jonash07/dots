@@ -1,21 +1,29 @@
 @import "colors.css";
 
-* {
+
+/*
+mainbar config
+*/
+
+
+*
+{
     border: none;
     font-family: Mononoki Nerd Font;
     font-size: 20px;
-    
 
 }
 
 
-window#waybar {
+window#waybar
+{
     background-color: transparent;
 
 }
 
 
-window#waybar > box {
+window#waybar > box
+{
     background-color: transparent;
     margin-right: 6px;
     margin-left: 6px;
@@ -23,16 +31,24 @@ window#waybar > box {
 }
 
 
-/* standalone modules + groups */
+/*
+standalone modules + groups
+*/
+
+
+#custom-playerctl,
 #custom-logo,
+#bluetooth,
+#pulseaudio,
 #workspaces,
 #tray,
 #network,
-#clock,
-#hardinfo,
-#media
+#batinfo,
+#cpu,
+#memory,
+#clock
 {
-    background-color: @module;
+    background-color: @bg0;
     margin: 8px 4px 0px 4px;
     padding: 0px 4px 0px 4px;
     border-radius: 4px;
@@ -41,8 +57,23 @@ window#waybar > box {
 }
 
 
-#media,
-#hardinfo,
+/*
+standalone overrides
+*/
+
+
+#custom-logo
+{
+  padding: 0 2px 0 4px;
+}
+
+
+#bluetooth
+{
+  padding: 0px 8px 0px 6px;
+}
+
+
 #workspaces
 {
   padding: 0 0 0 0;
@@ -50,36 +81,29 @@ window#waybar > box {
 }
 
 
-/* inside group modules */
-#bluetooth,
-#pulseaudio,
-#custom-playerctl,
-#battery,
-#battery-bat2,
-#cpu,
-#memory
+#tray
 {
-    background-color: @submodule;
-    margin: 3px 3px 3px 3px;
-    padding: 0px 4px 0px 4px;
-    border-radius: 4px;
-    color: @text-color;
-}
-
-
-#custom-powerbutton,
-#custom-poweroff,
-#custom-reboot,
-#custom-logout
-{
-  padding: 0 8px 0 4px;
-  margin: 3px 2px 3px 2px;
+  min-width: 24px;
 
 }
 
 
-#workspaces button {
-    background-color: @submodule;
+#network
+{
+  padding: 0 6px 0 6px;
+
+}
+
+
+#batinfo
+{
+  padding: 0 0 0 0;
+}
+
+
+#workspaces button
+{
+    background-color: @bg1;
     margin: 3px 3px 3px 3px;
     padding: 0 4px 0 4px;
     border-radius: 4px;
@@ -88,33 +112,31 @@ window#waybar > box {
 }
 
 
-#workspaces button:hover {
-  background: @submodule-active;
+#workspaces button:hover
+{
+  background: @bg1_act;
   box-shadow: unset;
 
 }
 
 
-#tray {
-  min-width: 24px;
+/*
+inside group modules
+*/
+
+
+#battery,
+#battery-bat2
+{
+    background-color: @bg1;
+    margin: 3px 3px 3px 3px;
+    padding: 0px 4px 0px 4px;
+    border-radius: 4px;
+    color: @text-color;
 
 }
 
-
-#network {
-  padding: 0 6px 0 6px;
-
-}
-
-
-#custom-logo {
-    padding: 2px 4px 2px 7px;
-
-}
-
-
-#custom-power {
-    padding: 2px 2px 2px 9px;
-
-}
+/*
+inside group overrides
+*/
 
