@@ -7,7 +7,7 @@
 
 # Allow
 !.gitignore
-!macchiato_mod.txt
+!colors.txt
 !starship.toml
 !waybar/
 !waybar/*

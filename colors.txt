@@ -1,0 +1,49 @@
+base00: "#24273a" # base
+base01: "#1e2030" # mantle
+base02: "#363a4f" # surface0
+base03: "#494d64" # surface1
+base04: "#5b6078" # surface2
+base05: "#cad3f5" # text
+base06: "#f4dbd6" # rosewater
+base07: "#b7bdf8" # lavender
+base08: "#ed8796" # red
+base09: "#f5a97f" # peach
+base0A: "#eed49f" # yellow
+base0B: "#a6da95" # green
+base0C: "#8bd5ca" # teal
+base0D: "#8aadf4" # blue
+base0E: "#c6a0f6" # mauve
+base0F: "#f0c6c6" # flamingo
+base10: "#1e2030" # mantle - darker background
+base11: "#181926" # crust - darkest background
+base12: "#ee99a0" # maroon - bright red
+base13: "#f1ddb2" # bright yellow (mod)
+base14: "#b8e1aa" # bright green (mod)
+base15: "#91d7e3" # sky - bright cyan
+base16: "#7dc4e4" # sapphire - bright blue
+base17: "#f7caeb" # pink - bright purple
+
+fg: "#d5d6db"
+fg_hl: "#cad3f5"
+fg_act: "#b7bdf8"
+bg: "#1e2030"
+bg_hl: "#212337"
+bg_act: "#363a4f"
+
+base00: #212337
+base01: #403c64
+base02: #596399
+base03: #748cd6
+base04: #a1abe0
+base05: #a3ace1
+base06: #b4a4f4
+base07: #ef43fa
+base08: #ff5370
+base09: #f67f81
+base0A: #ffc777
+base0B: #2df4c0
+base0C: #04d1f9
+base0D: #40ffff
+base0E: #b994f1
+base0F: #ecb2f0
+
