@@ -17,8 +17,6 @@
 !fastfetch/*
 !rofi/
 !rofi/*
-!nvim/
-!nvim/**
 !hypr/
 !hypr/hyprlock.conf
 !hypr/hypridle.conf
