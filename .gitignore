@@ -12,8 +12,8 @@
 !colors.txt
 !MangoHud/
 !MangoHud/MangoHud.conf
-!configarchive/
-!configarchive/**
+!.configarchive/
+!.configarchive/**
 
 # Theming
 !starship.toml
