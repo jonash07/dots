@@ -28,5 +28,6 @@
 !hypr/
 !hypr/hyprlock.conf
 !hypr/hypridle.conf
-!hypr/hyprland_style.conf
+!hypr/style_hyprland.conf
+!hypr/hyprland.conf
 
