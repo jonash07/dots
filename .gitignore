@@ -26,8 +26,5 @@
 !rofi/
 !rofi/*
 !hypr/
-!hypr/hyprlock.conf
-!hypr/hypridle.conf
-!hypr/style_hyprland.conf
-!hypr/hyprland.conf
+!hypr/*
 
