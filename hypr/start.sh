@@ -2,5 +2,5 @@
 waybar &
 awww-daemon &
 mako &
-./mmb.sh
+~/.config/hypr/mmb.sh &
 

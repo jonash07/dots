@@ -20,7 +20,7 @@ on-notify=none
 font=Mononoki Nerd Font 12
 
 # background color of notification( #RRGGBB | #RRGGBBAA )
-background-color=#1E2023D8
+background-color=#1E2023E0
 
 # Text color inside the notification( #RRGGBB | #RRGGBBAA )
 text-color=#CAD3F5
