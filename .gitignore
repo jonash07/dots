@@ -9,11 +9,10 @@
 
 # Actual configs
 !.gitignore
-
+!.mymisc/
+!.mymisc/**
 !MangoHud/
-!MangoHud/MangoHud.conf
-
-
+!MangoHud/*
 
 # Theming
 !starship.toml
