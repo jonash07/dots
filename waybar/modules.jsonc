@@ -37,6 +37,46 @@
     }
   },
 
+  "custom/playerdata": {
+    "tooltip": false,
+    "format": "{}",
+    "return-type": "json",
+    "exec": "playerctl -a metadata --format '{\"text\": \"{{markup_escape(title)}} - {{artist}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\"}' -F",
+    "max-length": 40
+  },
+
+  "cava": {
+    "framerate": 60,
+    "bar_delimiter": 0,
+    "bars": 12,
+    "format-icons": [" ", "▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ] 
+  },
+
+  "custom/playpause": {
+    "tooltip": false,
+    "format": "{icon}",
+    "return-type": "json",
+    "exec": "playerctl -a metadata --format '{\"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F", 
+    "on-click": "playerctl play-pause",
+    "on-click-right": "playerctl next",
+    "format-icons": {
+      "Playing": "󰏥 ",
+      "Paused": "󰐌 "
+    }
+  },
+
+  "custom/prev": {
+    "tooltip": false,
+    "format": "󰒮",
+    "on-click": "playerctl previous"
+  },
+
+  "custom/next": {
+    "tooltip": false,
+    "format": "󰒭",
+    "on-click": "playerctl next"
+  },
+
   "bluetooth": {
     "format-on": "󰂯",
     "format-off": "󰂲",

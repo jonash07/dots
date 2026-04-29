@@ -6,10 +6,21 @@
   "spacing": 0,
 
   "modules-left": ["custom/logo", "cpu", "memory", "hyprland/workspaces"],
-  "modules-center": [],
+  "modules-center": ["group/visual"],
   "modules-right": ["group/batinfo", "tray", "bluetooth", "pulseaudio", "network", "clock"],
 
 // add notifs
+
+  "group/visual": {
+    "orientation": "inherit",
+    "modules": [
+      "cava",
+      "custom/playerdata",
+      "custom/prev",
+      "custom/playpause",
+      "custom/next"
+    ]
+  },
 
   "group/batinfo": {
     "orientation": "inherit",

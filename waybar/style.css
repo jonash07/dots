@@ -38,6 +38,7 @@ standalone modules + groups
 
 #custom-playerctl,
 #custom-logo,
+#visual,
 #bluetooth,
 #pulseaudio,
 #workspaces,
@@ -64,40 +65,50 @@ standalone overrides
 
 #custom-logo
 {
-  padding: 0 2px 0 4px;
+    padding: 0 2px 0 4px;
+
+}
+
+
+#visual
+{
+    padding: 0 0 0 0;
+
 }
 
 
 #bluetooth
 {
-  padding: 0px 8px 0px 6px;
+    padding: 0 8px 0 6px;
+
 }
 
 
 #workspaces
 {
-  padding: 0 0 0 0;
+    padding: 0 0 0 0;
 
 }
 
 
 #tray
 {
-  min-width: 24px;
+    min-width: 24px;
 
 }
 
 
 #network
 {
-  padding: 0 6px 0 6px;
+    padding: 0 6px 0 6px;
 
 }
 
 
 #batinfo
 {
-  padding: 0 0 0 0;
+    padding: 0 0 0 0;
+
 }
 
 
@@ -114,8 +125,8 @@ standalone overrides
 
 #workspaces button:hover
 {
-  background: @bg1_act;
-  box-shadow: unset;
+    background: @bg1_act;
+    box-shadow: unset;
 
 }
 
@@ -125,18 +136,31 @@ inside group modules
 */
 
 
+#custom-playerdata,
+#cava,
+#custom-prev,
+#custom-playpause,
+#custom-next,
 #battery,
 #battery-bat2
 {
     background-color: @bg1;
     margin: 3px 3px 3px 3px;
-    padding: 0px 4px 0px 4px;
+    padding: 0 4px 0 4px;
     border-radius: 4px;
     color: @text-color;
 
 }
 
+
 /*
 inside group overrides
 */
+
+
+#custom-playpause
+{
+    padding: 0 0 0 6px;
+
+}
 
