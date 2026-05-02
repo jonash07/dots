@@ -20,6 +20,8 @@
 !waybar/*
 !alacritty/
 !alacritty/*
+!kitty/
+!kitty/*
 !fastfetch/
 !fastfetch/*
 !rofi/
