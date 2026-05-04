@@ -16,6 +16,9 @@
     "modules": [
       "cava",
       "custom/playerdata",
+      "custom/voldown",
+      "custom/volicon",
+      "custom/volup",
       "custom/prev",
       "custom/playpause",
       "custom/next"

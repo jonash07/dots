@@ -48,7 +48,7 @@
   "cava": {
     "framerate": 60,
     "bar_delimiter": 0,
-    "bars": 12,
+    "bars": 16,
     "format-icons": [" ", "▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ] 
   },
 
@@ -63,6 +63,23 @@
       "Playing": "󰏥 ",
       "Paused": "󰐌 "
     }
+  },
+
+  "custom/volicon": {
+    "tooltip": false,
+    "format": ""
+  },
+
+  "custom/voldown": {
+    "tooltip": false,
+    "format": "-",
+    "on-click": "playerctl volume 0.1-"
+  },
+
+  "custom/volup": {
+    "tooltip": false,
+    "format": "+",
+    "on-click": "playerctl volume 0.1+"
   },
 
   "custom/prev": {
