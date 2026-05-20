@@ -28,5 +28,6 @@
 !rofi/*
 !hypr/
 !hypr/*
+hypr/misc.lua
 !mako/
 !mako/*
