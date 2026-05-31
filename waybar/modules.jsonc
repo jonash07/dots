@@ -98,7 +98,7 @@
     "format-on": "󰂯",
     "format-off": "󰂲",
     "format-connected": "󰂰",
-    "on-click": "overskride"
+    "on-click": "blueman-manager"
   },
 
 // slider on hover? or group
