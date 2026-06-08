@@ -7,14 +7,14 @@
 
 # Allow
 
-# Actual configs
+# Misc configs
 !.gitignore
 !.mymisc/
 !.mymisc/**
-!MangoHud/
-!MangoHud/*
 
 # Theming
+!MangoHud/
+!MangoHud/*
 !starship.toml
 !waybar/
 !waybar/*
@@ -28,6 +28,5 @@
 !rofi/*
 !hypr/
 !hypr/*
-hypr/misc.lua
 !mako/
 !mako/*
