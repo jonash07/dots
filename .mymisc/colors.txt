@@ -23,13 +23,6 @@ base15: "#91d7e3" # sky - bright cyan
 base16: "#7dc4e4" # sapphire - bright blue
 base17: "#f7caeb" # pink - bright purple
 
-fg: "#d5d6db"
-fg_hl: "#cad3f5"
-fg_act: "#b7bdf8"
-bg: "#1e2030"
-bg_hl: "#212337"
-bg_act: "#363a4f"
-
 base00: #212337
 base01: #403c64
 base02: #596399
@@ -61,21 +54,21 @@ base06: "#f4dbd6" # rosewater
 base07: "#b7bdf8" # lavender
 base08: "#ed8796" # red
 base09: "#f5a97f" # peach
-base0A: "#eed49f" # yellow
-base0B: "#a6da95" # green
-base0C: "#8bd5ca" # teal
-base0D: "#8aadf4" # blue
-base0E: "#c6a0f6" # mauve
-base0F: "#f0c6c6" # flamingo
+base10: "#eed49f" # yellow
+base11: "#a6da95" # green
+base12: "#8bd5ca" # teal
+base13: "#8aadf4" # blue
+base14: "#c6a0f6" # mauve
+base15: "#f0c6c6" # flamingo
 
-base10: "#1e2030" # mantle - darker background
-base11: "#181926" # crust - darkest background
-base12: "#ee99a0" # maroon - bright red
-base13: "#f1ddb2" # bright yellow (mod)
-base14: "#b8e1aa" # bright green (mod)
-base15: "#91d7e3" # sky - bright cyan
-base16: "#7dc4e4" # sapphire - bright blue
-base17: "#f7caeb" # pink - bright purple
+base16: "#1e2030" # mantle - darker background
+base17: "#181926" # crust - darkest background
+base18: "#ee99a0" # maroon - bright red
+base19: "#f1ddb2" # bright yellow (mod)
+base20: "#b8e1aa" # bright green (mod)
+base21: "#91d7e3" # sky - bright cyan
+base22: "#7dc4e4" # sapphire - bright blue
+base23: "#f7caeb" # pink - bright purple
 
 base00: #212337
 base01: #403c64

@@ -1,0 +1,47 @@
+[colors]
+# Catppuccin macchiato
+00 = "#24273aff"
+01 = "#1e2030ff"
+02 = "#363a4fff"
+03 = "#494d64ff"
+04 = "#5b6078ff"
+05 = "#cad3f5ff"
+06 = "#f4dbd6ff"
+07 = "#b7bdf8ff"
+08 = "#ed8796ff"
+09 = "#f5a97fff"
+10 = "#eed49fff"
+11 = "#a6da95ff"
+12 = "#8bd5caff"
+13 = "#8aadf4ff"
+14 = "#c6a0f6ff"
+15 = "#f0c6c6ff"
+
+# Catppuccin macchiato base24
+16 = "#1e2030ff"
+17 = "#181926ff"
+18 = "#ee99a0ff"
+19 = "#f1ddb2ff"
+20 = "#b8e1aaff"
+21 = "#91d7e3ff"
+22 = "#7dc4e4ff"
+23 = "#f7caebff"
+
+# Shade part of moonlight
+24 = "#212337ff"
+25 = "#403c64ff"
+26 = "#596399ff"
+27 = "#748cd6ff"
+28 = "#a1abe0ff"
+29 = "#a3ace1ff"
+30 = "#b4a4f4ff"
+31 = "#ef43faff"
+
+# Compat
+32 = "#f5bde6ff"
+33 = "#b8c0e0ff"
+34 = "#a5adcbff"
+
+[custom.font]
+mononoki = "Mononoki Nerd Font"
+

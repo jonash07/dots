@@ -26,10 +26,10 @@ background-color=#1E2023E0
 text-color=#CAD3F5
 
 # Set width of notification popup.( value in px )
-width=479
+width=480
 
 # maximum height of notification( value in px )
-height=255
+height=256
 
 # margin of notification which is margin for the list of notification block( value in px ).
 outer-margin=1

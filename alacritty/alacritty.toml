@@ -8,50 +8,40 @@ opacity = 0.7
 
 
 [colors.primary]
-background = '#24273A' # base
-foreground = '#CAD3F5' # text
-dim_foreground = '#CAD3F5' # text
-bright_foreground = '#CAD3F5' # text
+background = "#24273a"
+foreground = "#cad3f5"
 
 
 [colors.cursor]
-text = '#24273A' # base
-cursor = '#F4DBD6' # rosewater
+cursor = '#F4DBD6'
 
 
 [colors.vi_mode_cursor]
-text = '#24273A' # base
-cursor = '#B7BDF8' # lavender
+cursor = '#B7BDF8'
 
 
 [colors.search.matches]
-foreground = '#24273A' # base
-background = '#A5ADCB' # subtext0
+background = '#A5ADCB'
 
 
 [colors.search.focused_match]
-foreground = '#24273A' # base
-background = '#A6DA95' # green
+background = '#A6DA95'
 
 
 [colors.footer_bar]
-foreground = '#24273A' # base
-background = '#A5ADCB' # subtext0
+background = '#A5ADCB'
 
 
 [colors.hints.start]
-foreground = '#24273A' # base
-background = '#EED49F' # yellow
+background = '#EED49F'
 
 
 [colors.hints.end]
-foreground = '#24273A' # base
-background = '#A5ADCB' # subtext0
+background = '#A5ADCB'
 
 
 [colors.selection]
-text = '#24273A' # base
-background = '#F4DBD6' # rosewater
+background = '#F4DBD6'
 
 
 [colors.normal]
@@ -74,15 +64,4 @@ blue = '#7dc4e4' # sapphire
 magenta = '#f7caeb' # bright pink
 cyan = '#91d7e3' # sky
 white = '#A5ADCB' # subtext0
-
-
-[colors.dim]
-black = '#494D64' # surface1
-red = '#ED8796' # red
-green = '#A6DA95' # green
-yellow = '#EED49F' # yellow
-blue = '#8AADF4' # blue
-magenta = '#F5BDE6' # pink
-cyan = '#8BD5CA' # teal
-white = '#B8C0E0' # subtext1
 
