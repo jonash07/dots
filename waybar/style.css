@@ -51,7 +51,7 @@ standalone modules + groups
     margin: 0 4px 0 4px;
     padding: 0 4px 0 4px;
     border-radius: 4px;
-    color: @fg_hl;
+    color: @fg;
 
 }
 
@@ -61,7 +61,7 @@ standalone modules + groups
 #clock:hover
 {
     background-color: @bg_act;
-    color: @fg;
+    color: @fg_act;
 }
 
 
@@ -133,7 +133,7 @@ standalone overrides
 #workspaces button.active
 {
     background-color: @bg_act;
-    color: @fg;
+    color: @fg_act;
 }
 
 
@@ -177,7 +177,7 @@ inside group modules
 #custom-next:hover
 {
     background-color: @bg_act;
-    color: @fg;
+    color: @fg_act;
 }
 
 
