@@ -133,7 +133,7 @@ standalone overrides
 #workspaces button.active
 {
     background-color: @bg_act;
-    color: @fg_act;
+    color: @fg_hl;
 }
 
 
