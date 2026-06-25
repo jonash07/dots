@@ -25,8 +25,7 @@ window#waybar
 window#waybar > box
 {
     background-color: transparent;
-    margin-right: 6px;
-    margin-left: 6px;
+    margin: 8px 6px 0 6px;
 
 }
 
@@ -36,7 +35,6 @@ standalone modules + groups
 */
 
 
-#custom-playerctl,
 #custom-logo,
 #visual,
 #bluetooth,
@@ -49,12 +47,21 @@ standalone modules + groups
 #memory,
 #clock
 {
-    background-color: @bg0;
-    margin: 8px 4px 0px 4px;
-    padding: 0px 4px 0px 4px;
+    background-color: @bg;
+    margin: 0 4px 0 4px;
+    padding: 0 4px 0 4px;
     border-radius: 4px;
-    color: @text-color;
+    color: @fg_hl;
 
+}
+
+
+#bluetooth:hover,
+#pulseaudio:hover,
+#clock:hover
+{
+    background-color: @bg_act;
+    color: @fg;
 }
 
 
@@ -114,18 +121,25 @@ standalone overrides
 
 #workspaces button
 {
-    background-color: @bg1;
+    background-color: @bg_hl;
     margin: 3px 3px 3px 3px;
     padding: 0 4px 0 4px;
     border-radius: 4px;
-    color: @text-color;
+    color: @fg_hl;
 
+}
+
+
+#workspaces button.active
+{
+    background-color: @bg_act;
+    color: @fg;
 }
 
 
 #workspaces button:hover
 {
-    background: @bg1_act;
+    background: @bg_act;
     box-shadow: unset;
 
 }
@@ -147,12 +161,23 @@ inside group modules
 #battery,
 #battery-bat2
 {
-    background-color: @bg1;
+    background-color: @bg_hl;
     margin: 3px 3px 3px 3px;
     padding: 0 4px 0 4px;
     border-radius: 4px;
-    color: @text-color;
+    color: @fg_hl;
 
+}
+
+
+#custom-voldown:hover,
+#custom-volup:hover,
+#custom-prev:hover,
+#custom-playpause:hover,
+#custom-next:hover
+{
+    background-color: @bg_act;
+    color: @fg;
 }
 
 

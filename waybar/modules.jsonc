@@ -23,20 +23,6 @@
     }
   },
 
-  "custom/playerctl": {
-    "format": "{}",
-    "return-type": "json",
-    "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
-    "max-length": 48,
-    "on-click": "playerctl play-pause",
-    "on-click-middle": "playerctl previous",
-    "on-click-right": "playerctl next",
-    "format-icons": {
-      "Playing": "󰏥 ",
-      "Paused": "󰐌 "
-    }
-  },
-
   "custom/playerdata": {
     "tooltip": false,
     "format": "{}",
